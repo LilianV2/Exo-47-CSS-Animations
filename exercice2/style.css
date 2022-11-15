@@ -2,5 +2,22 @@
     width: 100px;
     height: 100px;
     background: red;
+    animation-name : bgChange;
+    animation-duration : 3s;
+    animation-timing-function: ease-in-out;
 }
 
+@keyframes bgChange {
+    5% {
+        background: red;
+    }
+    25% {
+        background : #d05858;
+    }
+    75% {
+        background: #45a945;
+    }
+    100% {
+        background: green;
+    }
+}

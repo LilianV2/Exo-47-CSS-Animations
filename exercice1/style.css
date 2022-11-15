@@ -36,7 +36,6 @@
 }
 
 
-
 #bar {
     width: 85px;
     height: 85px;
@@ -44,4 +43,33 @@
     position: absolute;
     left: 500px;
     top: 25px;
+
+    animation-name : bar-animation;
+    animation-duration : 8s;
+    animation-fill-mode : forwards;
+
+}
+
+@keyframes bar-animation {
+    5% {
+        width: 100px;
+        height: 100px;
+    }
+    25% {
+        background : #bce08a;
+        width: 125px;
+        height: 125px;
+    }
+    75% {
+        width: 280px;
+        height: 280px;
+        left: 580px
+    }
+    100% {
+        width: 475px;
+        height : 475px;
+        background : #de8282;
+        top: 85px;
+        left: 620px
+    }
 }

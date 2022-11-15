@@ -25,6 +25,8 @@
      height: 20px;
      top: 40px;
      left: -70px;
+    animation-name: v-helice;
+    animation-duration: 5s;
 }
 
 #palmeH {
@@ -34,13 +36,49 @@
     height: 400px;
     top: -175px;
     left: 117px;
+    animation-name: h-helice;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #helice {
     animation-name: rotHelice;
     animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
-@keyframes rotHelice {
+@keyframes h-helice {
+    from {
+        rotate: 0deg;
+    }
+    25% {
+        rotate: 90deg;
+    }
+    50% {
+        rotate: 180deg;
+    }
+    75% {
+        rotate: 270deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
 
+@keyframes v-helice {
+    from {
+        rotate: 0deg;
+    }
+    25% {
+        rotate: 90deg;
+    }
+    50% {
+        rotate: 180deg;
+    }
+    75% {
+        rotate: 270deg;
+    }
+    to {
+        rotate: 360deg;
+    }
 }

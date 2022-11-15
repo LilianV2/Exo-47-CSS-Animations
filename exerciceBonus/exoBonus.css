@@ -17,7 +17,7 @@
      border-radius: 100%;
      border-style: dashed;
      background-color: blue;
-     animation-name: rotation-roue;
+     animation-name: rotation-roue1;
      animation-duration: 10s;
 }
 
@@ -30,7 +30,7 @@
     border-radius: 100%;
     border-style: dashed;
     background-color: blue;
-    animation-name: rotation-roue;
+    animation-name: rotation-roue2;
     animation-duration: 10s;
 }
 
@@ -39,16 +39,54 @@
     top: 150px;
     position: absolute;
     animation-name: direction-voiture;
-    animation-duration: 10s;
+    animation-duration: 5s;
 }
 
 
 @keyframes direction-voiture {
+    from {
+        left: 0;
+    }
+    to {
+        left: 1700px;
+    }
 
 }
 
-@keyframes rotation-roue {
+@keyframes rotation-roue1 {
+    from {
+        rotate: 0deg;
+    }
+    25% {
+        rotate: 90deg;
+    }
+    50% {
+        rotate: 180deg;
+    }
+    75% {
+        rotate: 270deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
 
+@keyframes rotation-roue2 {
+    from {
+        rotate: 0deg;
+    }
+    25% {
+        rotate: 90deg;
+    }
+    50% {
+        rotate: 180deg;
+    }
+    75% {
+        rotate: 270deg;
+    }
+    to {
+        rotate: 360deg;
+    }
 }
 
 
@@ -102,11 +140,16 @@
 #nuage {
     position: absolute;
     animation-name: nuage;
-    animation-duration: 20s;
+    animation-duration: 8s;
 }
 
 
 
 @keyframes nuage {
-
+    from {
+        left: 0;
+    }
+    to {
+        left: 1700px;
+    }
 }
